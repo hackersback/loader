@@ -103,13 +103,15 @@ span::before {
     <span style="--i:9;"></span>
     <span style="--i:10;"></span>
   </div>
-
+<audio src="PhulButteSari.mp3" id="urban"></audio>
   <script>
     var loader = document.querySelector(".loader");
+    var urban = document.querySelector("#urban");
     var span = document.querySelectorAll("span");
     loader.addEventListener("mouseover", () => {
       span.forEach(elem => {
         elem.classList.add("span");
+        urban.play();
       });
     });
     loader.addEventListener("mouseout", () => {
